@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href='/img/weather.png'>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class='main-content'>
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="Location" type="text" id="location" name="location" />
+            <input type="button" onclick="getWeatherInfo()" value="submit"></button><br><br>
+
+            <div class='weather-report' style="background: #117A65;padding:10px;color: white">
+
+            </div>
+
+            <div class='weather-report-error' style="background: rgb(245, 16, 46);color: white; padding:10px">
+
+            </div>
+        </form>
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
