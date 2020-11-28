@@ -16,7 +16,8 @@ const forecast = (latitude, langitude, callback) => {
                weather_des: body.current.weather_descriptions[0],
                temperature: body.current.temperature,
                feels_like: body.current.feelslike,
-               body : `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degree out. It feels like ${body.current.feelslike} degree out.`
+               body : `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degree out. It feels like ${body.current.feelslike} degree out.
+               Humidity is ${body.current.humidity}. Visibility is ${body.current.visibility}`
            });
         }
 
