@@ -25,7 +25,7 @@ spanError.style.display = 'none';
 getWeatherInfo = () => {
   var city = document.querySelector("#location");
   if(city){ 
-  fetch(`http://localhost:3000/weather?address=${city.value}`).then((response) => {
+  fetch(`/weather?address=${city.value}`).then((response) => {
     response.json().then((data) => {
         if(data.error) {
             spanError.style.display = 'block';
