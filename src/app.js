@@ -25,14 +25,14 @@ app.get('', (req, res) => {
     res.render('index', {
         title : 'Weather',
         wheather_description : 'Visit our site for weather info',
-        name : 'Asad'
+        name : 'Asad Mehboob'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title : 'About',
-        name : 'Zeeshan'
+        name : 'Asad Mehboob'
     });
 });
 
@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
        helpText : 'We are here to Help You',
        title: 'Help',
-       name : 'Talha'
+       name : 'Asad Mehboob'
    });
 });
 
